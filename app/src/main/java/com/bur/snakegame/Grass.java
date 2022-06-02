@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 
 public class Grass {
     private Bitmap bm;
-    private int x,y, width, height;
+    private int x, y, width, height;
 
     public Grass(Bitmap bm, int x, int y, int width, int height) {
         this.bm = bm;
