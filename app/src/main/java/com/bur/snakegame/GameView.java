@@ -23,8 +23,8 @@ import java.util.Random;
 public class GameView extends View {
     private Bitmap bmGrass1, bmGrass2, bmSnake1, bmApple;
     private ArrayList<Grass> arrGrass = new ArrayList<>();
-    private int w = 12, h = 21;
-    public static int sizeElementMap = 75 * Constants.SCREEN_WIDTH / 1080;
+    private int w = 12, h = 25; //ширина поля
+    public static int sizeElementMap = 75 * Constants.SCREEN_WIDTH / 1080; //размер карты
     private Snake snake;
     private Apple apple;
     private Handler handler;
@@ -201,7 +201,7 @@ public class GameView extends View {
                 MainActivity.txt_best_score.setText(bestScore + "");
             }
         }
-        handler.postDelayed(r, 300); //скорость змеи
+        handler.postDelayed(r, 200); //скорость змеи
     }
 
     private void gameOver() {
